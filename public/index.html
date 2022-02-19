@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1,
+  maximum-scale=5"
+    />
+
+    <link rel="icon" href="devchallenges.png" />
+
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://devchallenges.io/"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Montserrat:wght@100&family=Outfit:wght@100&family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Montserrat:wght@100&family=Outfit:wght@100&family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Montserrat:wght@100;200;300&family=Outfit:wght@100&family=Playfair+Display&display=swap" rel="stylesheet">    <title>Devchallenges</title>
+
+    <style>
+      body {
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+      }
+      .kouti{
+        width: 80vw;
+        margin:0 auto;
+      }
+      header h1{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 64px;
+        font-family: 'Playfair Display', serif;
+      }
+      header p{
+        font-family: 'Playfair Display', serif;
+        font-style: italic;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        color: #4F4F4F;
+        width: 50%;
+      }
+      .img img{
+        width:100%;
+        height:auto;
+        border-radius: 12px;
+      }
+      .dots{
+        display: flex;
+        gap: 20px;
+        margin-bottom:20px;
+      }
+      h2{
+        font-family: "Playfair Display";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 32px;
+        color: #333333;
+      }
+      h4{
+        font-family: 'Playfair Display', serif;
+        font-style: italic;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 24px;
+        color: #333333;
+      }
+     label{
+      font-family: 'Montserrat',serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 25px;
+      color: #424242;
+      margin-left: 5px;
+     }
+    label span{
+       color:black;
+       font-weight:bold;
+       font-family: sans-serif ;
+     }
+     aside{
+       box-shadow: 1px 3px 16px 1px rgba(0,0,0,0.5);
+       border-radius: 2%;
+       flex:1;
+     }
+     main{
+       margin-top: 50px;
+       /* display: grid;
+       grid-template-columns: 70% auto;
+       gap:10%; */
+       display: flex;
+     }
+     main section{
+      flex:3;
+     }
+     aside section{
+       width:70%;
+       margin:70px auto 0px;
+     }
+     .grayspan{
+      font-family: 'Montserrat';
+      font-weight: bold;
+      font-size: 10px;
+      line-height: 12px;
+      text-transform: uppercase;
+      color: #BDBDBD;
+     }
+     section div span{
+      font-family: sans-serif;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 17px;
+      color: black;
+     }
+     .orange{
+       color:#F2994A;
+     }
+     .icons{
+       display: flex;
+       margin-bottom: 30px;
+       gap: 10px;
+     }
+     em{
+       font-family: sans-serif;
+       color: #777777;
+     }
+     #instructions div{
+       display:flex;
+       gap:6px;
+       margin-bottom: 10px;
+     }
+     #instructions span{
+      background: #F2994A;
+      border-radius: 6px;
+      padding: 15px;
+      height: 10px;
+      color: white;
+      font-size: 16px;
+     } 
+     #instructions p{
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 25px;
+      color: #333333;
+      font-family: 'Montserrat', sans-serif;
+      font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 150%;
+/* or 24px */
+
+
+color: #000000;
+     }
+     #instructions{
+      width: 60%;
+     }
+     .link,a{
+       color: #BDBDBD;
+       text-decoration: none;
+     }
+     b{
+       font-family: sans-serif;
+     }
+    input{
+      width: 21px;
+      height: 21px;
+      border: 1px solid #828282;
+      box-sizing: border-box;
+      border-radius: 4px;
+    }
+
+
+
+
+
+
+
+
+
+
+     @media (max-width:375px) {
+      main{
+        flex-direction: column;
+      }
+       aside{
+         order: 1;
+         box-shadow: none;
+       }
+       main section{
+         order:2;
+       }
+       header p{
+          width:100%;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 17px;
+       }
+       header h1{
+        font-size: 24px;
+        line-height: 32px;
+       }
+       #instructions p{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 150%;
+        color: #333333;
+     }
+     #instructions{
+      width: 100%;
+     }
+    
+     aside section{
+       width:100%;
+       margin:0px auto ;
+       display:grid;
+       grid-template-columns: repeat(3,1fr);
+       grid-template-areas: 
+        'block block block'
+        'div1 div2 div3' ;
+     }
+     .block{
+       grid-area: block;
+     }
+     .inline1{
+       grid-area: div1;
+     }
+     .inline2{
+       grid-area: div2;
+     }
+     .inline3{
+       grid-area: div3;
+     }
+     section div span{
+      font-size: 10px;
+      line-height: 12px;
+     }
+     .icons{
+       margin-bottom: 0px;
+     }
+     }
+    </style>
+  </head>
+  <body>
+  <div class="kouti">
+    <header class="container">
+      <h1>Classic Cheesecake Recipe</h1>
+      <div class="dots">
+        <img src="/6dots.svg" alt="6dots">
+        <p> Look no further for a creamy and ultra smooth classic cheesecake recipe! Paired with a buttery graham cracker crust, no one can deny its simple decadence. For the best results, bake in a water bath.</p>
+      </div>
+      <div class="img">
+        <img src="/photo1.png" alt="">
+      </div>
+    </header>
+    <main>
+      <section> 
+        <h2>Ingredients</h2>
+       <h4>Graham Cracker Crust</h4> 
+        <input type="checkbox" id="ok"><label for="ok"> 1 and 1/2 cups (150g) <span>graham cracker crumbs </span> (about 10 full sheet graham crackers)</label><br>
+        <input type="checkbox" id="ok1"><label for="ok1"> 5 Tablespoons (70g) <span> unsalted butter</span>, melted </label><br>
+        <input type="checkbox" id="ok2"><label for="ok2"> 1/4 cup (50g) <span> granulated sugar </span> </label>
+
+        <h4><em>Cheesecake</em></h4>
+        <input type="checkbox" id="no"><label for="no">four 8-ounce blocks (904g) full-fat <span>cream cheese</span> , softened to room temperature </label><br>
+        <input type="checkbox" id="no1"><label for="no1"> 1 cup (200g) <span>granulated sugar</span> </label><br>
+        <input type="checkbox" id="no2"><label for="no2"> 1 cup (240g) full-fat <span> sour cream</span>, at room temperature </label><br>
+        <input type="checkbox" id="no3"><label for="no3"> 1 teaspoon  <span>pure vanilla extract</span> </label><br>
+        <input type="checkbox" id="no4"><label for="no4"> 2 teaspoons <span>fresh lemon juice</span>  (optional, but recommended)</label><br>
+        <input type="checkbox" id="no5"><label for="no5">3 large <span>eggs</span> , at room temperature </label><br>
+        <input type="checkbox" id="no6"><label for="no6">  topping suggestions:<em> salted caramel, lemon curd, strawberry topping, chocolate ganache, red wine chocolate ganache, fresh fruit, whipped cream, or raspberry sauce </em> (recipe in notes)</label><br>
+      </section>
+      <aside>
+        <section>
+          <div class="icons block">
+           <p> &#x1F374;</p>
+            <div>       
+              <span class="grayspan">Yields</span><br>
+              <span class="orange">12 servings</span>
+            </div>
+          </div>
+          <div class="icons inline1">
+          <p> &#128340;</p> 
+            <div>       
+              <span class="grayspan"> Prep TIme</span><br>
+              <span>45 minutes</span>
+            </div>
+          </div>
+          <div class="icons inline2">
+           <p>&#128340;</p> 
+            <div>       
+              <span class="grayspan">Cook Time</span><br>
+              <span>1 hour</span>
+            </div>
+          </div>
+          <div class="icons inline3">
+           <p>&#128340;</p> 
+            <div>       
+              <span class="grayspan">Total Time</span><br>
+              <span>7.75 hours</span>
+            </div>
+          </div>
+        </section>  
+      </aside>
+    </main>
+    <section id="instructions">
+      <h2>Instructions</h2>
+      <div>
+        <span>1</span>
+        <p> Adjust the oven rack to the lower-middle position and preheat oven to 350°F (177°C)</p>
+      </div>
+      <div>
+        <span>2</span>
+        <p><b>Make the crust:</b>  Using a food processor, pulse the graham crackers into crumbs. Pour into a medium bowl and stir in sugar and melted butter until combined. (You can also pulse it all together in the food processor.) Mixture will be sandy. Press firmly into the bottom and slightly up the sides of a 9-inch or 10-inch springform pan. No need to grease the pan first. I use the bottom of a measuring cup to pack the crust down tightly. Pre-bake for 8 minutes. Remove from the oven and place the hot pan on a large piece of aluminum foil. The foil will wrap around the pan for the water bath in step 4. Allow crust to slightly cool as you prepare the filling.</p>
+      </div>
+      <div>
+        <span>3</span>
+        <p><b>Make the filling:</b> Using a handheld or stand mixer fitted with a paddle attachment, beat the cream cheese and granulated sugar together on medium-high speed in a large bowl until the mixture is smooth and creamy, about 2 minutes. Add the sour cream, vanilla extract, and lemon juice then beat until fully combined. On medium speed, add the eggs one at a time, beating after each addition until just blended. After the final egg is incorporated into the batter, stop mixing. To help prevent the cheesecake from deflating and cracking as it cools, avoid over-mixing the batter as best you can.</p>
+      </div>
+      <div>
+        <span>4</span>
+        <p><b>Prepare the simple water bath (see note)</b> Boil a pot of water. You need 1 inch of water in your roasting pan for the water bath, so make sure you boil enough. I use an entire kettle of hot water. As the water is heating up, wrap the aluminum foil around the springform pan. Pour the cheesecake batter on top of the crust. Use a rubber spatula or spoon to smooth it into an even layer. Place the pan inside of a large roasting pan. Carefully pour the hot water inside of the pan and place in the oven. (Or you can place the roasting pan in the oven first, then pour the hot water in. Whichever is easier for you.)</p>
+      </div>
+      <div>
+        <span>5</span>
+        <p>Bake cheesecake for 55-70 minutes or until the center is almost set. When it’s done, the center of the cheesecake will slightly wobble if you gently shake the pan. Turn the oven off and open the oven door slightly. Let the cheesecake sit in the oven in the water bath as it cools down for 1 hour. Remove from the oven and water bath, then cool cheesecake completely at room temperature. Then refrigerate the cheesecake for at least 4 hours or overnight.</p>
+      </div>
+      <div>
+        <span>6</span>
+        <p>Use a knife to loosen the chilled cheesecake from the rim of the springform pan, then remove the rim. Using a clean sharp knife, cut into slices for serving. For neat slices, wipe the knife clean and dip into warm water between each slice.</p>
+      </div>
+      <div>
+        <span>7</span>
+        <p>Serve cheesecake with desired toppings. Cover and store leftover cheesecake in the refrigerator for up to 5 days.</p>
+      </div>
+      <p class="link">Source: <a href="">https://sallysbakingaddiction.com/classic-cheesecake/</a> </p>
+    </section>
+  </div>
+  </body>
+</html>
